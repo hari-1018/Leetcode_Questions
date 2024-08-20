@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Composition</title>
+</head>
+<body>
+    <script>
+// Given an array of functions [f1, f2, f3, ..., fn], return a new function fn that is the function composition of the array of functions.
+
+// The function composition of [f(x), g(x), h(x)] is fn(x) = f(g(h(x))).
+
+// The function composition of an empty list of functions is the identity function f(x) = x.
+
+// You may assume each function in the array accepts one integer as input and returns one integer as output.
+
+function compose(functions) {
+return function(x) {
+return functions.reduceRight((acc, fun) => fun(acc), x);
+};
+}
+
+const functions = [ x => x + 1, x => x * x, x => 2 * x];
+
+const fn = compose(functions);
+const result = fn(4);
+console.log(result); 
+
+    </script>
+</body>
+</html>

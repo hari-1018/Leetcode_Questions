@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allow One Function Call</title>
+</head>
+<body>
+    <script>
+// Given a function fn, return a new function that is identical to the original function except that it ensures fn is called at most once.
+
+// The first time the returned function is called, it should return the same result as fn.
+// Every subsequent time it is called, it should return undefined.
+
+var once = function(fn) {
+let called = false;
+let output;
+
+return function(...args){
+if(!called){
+called = true;
+output = fn(...args);
+return output;
+}
+return undefined;
+}
+};
+
+let fn = (a,b,c) => (a + b + c)
+let result = once(fn)
+
+console.log(result(1,2,3));
+console.log(result(2,3,6));
+console.log(result(3,6,9));
+    </script>
+</body>
+</html>
