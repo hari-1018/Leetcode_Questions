@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Cancellation</title>
+</head>
+<body>
+    <script>
+        var cancellable = function(fn, args, t, cancelTimeMs) {
+    fn(...args);
+    let timeInterval = setInterval(()=>fn(...args),t)
+
+    let cancelFn=()=>clearInterval(timeInterval);
+    setTimeout(cancelFn, cancelTimeMs);
+    return cancelFn;
+};
+function example(name){
+    console.log(`Hello ${name}!`);
+}
+
+
+const cancel = cancellable(example,['John'],2000,6000);
+
+    </script>
+</body>
+</html>
