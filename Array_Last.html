@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Prototype Last</title>
+</head>
+<body>
+    <script>
+        // Write code that enhances all arrays such that you can call the array.last() method on any array and it will return the last element. If there are no elements in the array, it should return -1.
+
+        Array.prototype.last = function() {
+    if(this.length > 0){
+        return this[this.length - 1]
+    }
+    else{
+        return -1;
+    }
+    
+};
+
+const arr = [7,10,11,17,18,45];
+console.log( arr.last());
+
+    </script>
+</body>
+</html>
