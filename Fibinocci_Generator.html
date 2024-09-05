@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Generate Fibonacci Sequence </title>
+</head>
+<body>
+    <script>
+
+// Write a generator function that returns a generator object which yields the fibonacci sequence.
+// The fibonacci sequence is defined by the relation Xn = Xn-1 + Xn-2.
+// The first few numbers of the series are 0, 1, 1, 2, 3, 5, 8, 13.
+
+var fibGenerator = function*() 
+{
+    var a=0;
+    var b=1;
+    while(true)
+    {
+        yield a;
+        var c = a+b;
+        a=b;
+        b=c;
+    }
+};
+
+const gen = fibGenerator();
+console.log(gen.next().value);
+console.log(gen.next().value); 
+console.log(gen.next().value); 
+console.log(gen.next().value); 
+console.log(gen.next().value); 
+console.log(gen.next().value); 
+
+
+    </script>
+</body>
+</html>
