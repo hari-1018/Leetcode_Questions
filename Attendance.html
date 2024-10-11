@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Attendance Record</title>
+</head>
+<body>
+    <script>
+        // You are given a string s that shows attendance record of a student where each character signifies whether the student was absent, late, or present on that day. 
+        // 'A': Absent.
+        // 'L': Late.
+        // 'P': Present.
+
+        // The student is eligible for an attendance award if they meet both of the following criteria:
+
+        // The student was absent ('A') for strictly fewer than 2 days total.
+        // The student was never late ('L') for 3 or more consecutive days.
+        // Return true if the student is eligible for an attendance award, or false otherwise.
+
+        // Example 1:
+        // Input: s = "PPALLP"
+        // Output: true
+
+        // Example 2:
+        // Input: s = "PPALLL"
+        // Output: false
+
+        var checkAttendance = function(s) {
+            let absent = 0;
+            let late = 0;
+            let array = s.split("");
+
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === 'A') {
+                    absent++;
+                } else if (array[i] === 'L') {
+                    late++;
+                } else {
+                    late = 0;
+                }
+                if (absent >= 2 || late >= 3) {
+                    return false;
+                }
+        }
+        return true;
+    }
+
+        console.log(checkAttendance("PPALLP"));
+        console.log(checkAttendance("PPALLL"));
+        console.log(checkAttendance("PALPAL"));
+        console.log(checkAttendance("PPPLLA"));
+
+
+    
+    </script>
+</body>
+</html>
