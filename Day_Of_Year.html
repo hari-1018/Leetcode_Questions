@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day of the Year</title>
+</head>
+<body>
+    <script>
+        // Given a string date representing a Gregorian calendar date formatted as YYYY-MM-DD, return the day number of the year.
+
+        // Example 1:
+        // Input: date = "2019-01-09"
+        // Output: 9
+
+        // Example 2:
+        // Input: date = "2019-02-10"
+        // Output: 41
+
+        var dayOfYear = function(date)
+        {
+            const[year,month,day] = date.split('-').map(Number);
+            const dates = [31,28,31,30,31,30,31,31,30,31,30,31];
+
+            if(year % 4 === 0 && year % 100!== 0 || year % 400 === 0)
+            {
+                dates[1] = 29;
+            }
+            const totaldays = dates.slice(0, month-1).reduce((sum, date) => sum + date, 0) + day;
+            return totaldays;
+        }
+        console.log(dayOfYear("2019-01-09")); 
+        console.log(dayOfYear("2019-02-10"));
+    </script>
+</body>
+</html>
