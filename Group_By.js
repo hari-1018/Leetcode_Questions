@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group By</title>
-</head>
-<body>
-    <script>
+
         // Write code that enhances all arrays such that you can call the array.groupBy(fn) method on any array and it will return a grouped version of the array.
 
 // A grouped array is an object where each key is the output of fn(arr[i]) and each value is an array containing all items in the original array with that key.
@@ -37,7 +29,3 @@ console.log(grouped);
 const animals = ['cat', 'dog', 'fish', 'cow'];
 const groupedAnimals = animals.groupBy(animal => animal[0]);
 console.log(groupedAnimals); 
-
-    </script>
-</body>
-</html>
