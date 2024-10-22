@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Execute Asynchronous Functions in Parallel</title>
-</head>
-<body>
-    <script>
-
 // Given an array of asynchronous functions functions, return a new promise promise. Each function in the array accepts no arguments and returns a promise. All the promises should be executed in parallel.
 
 // promise resolves:
@@ -47,7 +37,3 @@
 console.log(promiseAll([ () => new Promise(resolve => setTimeout(() => resolve(4), 50)), 
     () => new Promise(resolve => setTimeout(() => resolve(10), 150)), 
     () => new Promise(resolve => setTimeout(() => resolve(16), 100))]));
-
-    </script>
-</body>
-</html>
