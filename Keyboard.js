@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyboard Row</title>
-</head>
-<body>
-    <script>
         // Given a list of strings words, return all words that can be typed using letters of the alphabet on only one row of a keyboard.
         // the first row consists of the characters "qwertyuiop",
         // the second row consists of the characters "asdfghjkl", and
@@ -40,7 +31,4 @@
             }
             return result;
         }
-        console.log(findWords(["Hello","Alaska","Dad","Peace"])); // Output: ["Alaska","Dad","Peace"]
-    </script>
-</body>
-</html>
+        console.log(findWords(["Hello","Alaska","Dad","Peace"]));
