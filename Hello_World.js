@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Function</title>
-</head>
-<body>
-    <script>
 // Write a function createHelloWorld. It should return a new function that always returns "Hello World".
 
 function createHelloWorld() 
@@ -20,6 +11,3 @@ function createHelloWorld()
 const f = createHelloWorld();
 console.log(f());
 
-    </script>
-</body>
-</html>
