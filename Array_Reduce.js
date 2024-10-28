@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Reduce Transformation</title>
-</head>
-<body>
-    <script>
 // Given an integer array nums, a reducer function fn, and an initial value init, return the final result obtained by executing the fn function on each element of the array, sequentially, passing in the return value from the calculation on the preceding element.
 
 // This result is achieved through the following operations: val = fn(init, nums[0]), val = fn(val, nums[1]), val = fn(val, nums[2]), ... until every element in the array has been processed. The ultimate value of val is then returned.
 
 // If the length of the array is 0, the function should return init.
+
+// Example 1:
+// Input: 
+// nums = [1,2,3,4]
+// init = 0
+// Output: 10
+
+// Example 2:
+// Input: 
+// nums = [1,2,3,4]
+// init = 100
+// Output: 130
 
 var reduce = function(nums, fn, init) {
   let value = init;
@@ -24,10 +27,6 @@ function sum(accum, curr)
 {
     return accum + curr; 
 }
-let array = [10, 20, 30];
-let new_array = reduce(array, sum, 0);
+let array = [1, 2, 3, 4];
+let new_array = reduce(array, sum, 100);
 console.log(new_array);
-
-    </script>
-</body>
-</html>
