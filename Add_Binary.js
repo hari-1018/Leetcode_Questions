@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Binary</title>
-</head>
-<body>
-    <script>
+
         // Given two binary strings a and b, return their sum as a binary string.
         // Example 1:
         // Input: a = "11", b = "1"
@@ -38,7 +30,3 @@
         let a = "11"
         let b = "1"
         console.log(addBinary(a, b));
-        
-    </script>
-</body>
-</html>
