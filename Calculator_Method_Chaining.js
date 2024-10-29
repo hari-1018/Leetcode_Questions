@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator with Method Chaining
-    </title>
-</head>
-<body>
-    <script>
-
 // Design a Calculator class. The class should provide the mathematical operations of addition, subtraction, multiplication, division, and exponentiation. It should also allow consecutive operations to be performed using method chaining. The Calculator class constructor should accept a number which serves as the initial value of result.
 
 // add - This method adds the given number value to the result and returns the updated Calculator.
@@ -57,7 +46,7 @@ class Calculator {
     }
 }
 
-const calc = new Calculator(2);
+const calc = new Calculator(3);
 const finalResult = calc.add(2)
                        .subtract(3)
                        .multiply(4)
@@ -66,7 +55,3 @@ const finalResult = calc.add(2)
                        .getResult();
 
 console.log(finalResult);
-
-    </script>
-</body>
-</html>
