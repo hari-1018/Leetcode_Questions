@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Pattern</title>
-</head>
-<body>
-    <script>
         // Given a pattern and a string s, return true if s follows the same pattern.
         // The pattern consists of lowercase English letters and digits.
         // The string consists of lowercase English letters, digits, and spaces.
@@ -38,15 +29,6 @@
         }
         return true;
     }
-            
-            
         
         console.log(wordPattern("abba", "dog cat cat dog")); 
         console.log(wordPattern("abba", "dog cat cat fish")); 
-
-
-
-
-    </script>
-</body>
-</html>
