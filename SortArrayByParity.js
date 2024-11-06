@@ -6,4 +6,6 @@ var sortArrayByParity = function(nums) {
     
 };
 console.log(sortArrayByParity([3,1,2,4]));
-console.log(sortArrayByParity([3,5,8,7,1,2,4]));
+console.log(sortArrayByParity([3,5,8,1,2,4]));
+console.log(sortArrayByParity([0]));
+
