@@ -19,6 +19,6 @@
     };
 
     var nums = [2,4,6,8,11];
-    var target = 14;
+    var target = 12;
     console.log(twoSum(nums,target));
     
