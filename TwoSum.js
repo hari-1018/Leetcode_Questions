@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Sum</title>
-</head>
-<body>
-    <script>
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -31,6 +22,3 @@
     var target = 14;
     console.log(twoSum(nums,target));
     
-    </script>
-</body>
-</html>
