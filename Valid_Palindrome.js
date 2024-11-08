@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valid Palindrome</title>
-</head>
-<body>
-    <script>
         // Given a string s, return true if it is a palindrome, considering only alphanumeric characters and ignoring case.
+        
         // Example 1:
         // Input: s = "A man, a plan, a canal: Panama"
         // Output: true
@@ -27,9 +19,3 @@
     };
     console.log(isPalindrome("A man, a plan, a canal: Panama"));
     console.log(isPalindrome("race a car"));
-
-    
-
-    </script>
-</body>
-</html>
