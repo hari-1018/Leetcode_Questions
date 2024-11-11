@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply Transform Over Each Element in Array</title>
-</head>
-<body>
-    <script>
-
 // Given an integer array arr and a mapping function fn, return a new array with a transformation applied to each element. The returned array should be created such that returnedArray[i] = fn(arr[i], i).
 
 var map = function(arr, fn) 
@@ -28,9 +18,3 @@ let array = [1, 2, 3];
 let new_array = map(array, plusOne);
 
 console.log(new_array);
-
-
-
-    </script>
-</body>
-</html>
