@@ -22,5 +22,7 @@ var uniqueOccurence = (arr) => {
 
 console.log(uniqueOccurence([1,2,2,1,1,3]));
 console.log(uniqueOccurence([1,2]));
+console.log(uniqueOccurence([-3,0,1,-3,1,1,1,-3,10,0]));
+
 
 
