@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindrome Number</title>
-</head>
-<body>
-    <script>
+
         // Given an integer x, return true if it is a palindrome.
 
         // Example 1:
@@ -30,7 +22,3 @@
         }
         
         console.log(isPalindrome(121)); 
-
-    </script>
-</body>
-</html>
