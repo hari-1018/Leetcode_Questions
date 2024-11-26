@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intersection of Two Arrays</title>
-</head>
-<body>
-    <script>
         // Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
         // Example 1:
         // Input: nums1 = [1,2,2,1], nums2 = [2,2]
@@ -28,7 +19,3 @@
         var nums1 = [4,9,5];
         var nums2 = [9,4,9,8,4];
         console.log(intersection(nums1, nums2));
-
-    </script>
-</body>
-</html>
