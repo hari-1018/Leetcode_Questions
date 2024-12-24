@@ -13,7 +13,7 @@
 // Input: title = "First leTTeR of EACH Word"
 // Output: "First Letter of Each Word"
 
-var captalizeTitle = function(title){
+var capitalizeTitle = function(title){
     let text = title.toLowerCase();
     let split = text.split(' ');
     let changeTitle = split.map(word => {
@@ -25,5 +25,5 @@ var captalizeTitle = function(title){
     })
     return changeTitle.join(' ');
 }
-console.log(captalizeTitle("capiTalIze tHe titLe"));
-console.log(captalizeTitle("First leTTeR Of EACH Word"));
+console.log(capitalizeTitle("capiTalIze tHe titLe"));
+console.log(capitalizeTitle("First leTTeR Of EACH Word"));
