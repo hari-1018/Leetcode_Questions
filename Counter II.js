@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter II</title>
-</head>
-<body>
-    <script>
 // Write a function createCounter. It should accept an initial integer init. It should return an object with three functions. The three functions are:
 // => increment() increases the current value by 1 and then returns it.
 // => decrement() reduces the current value by 1 and then returns it.
@@ -29,10 +20,3 @@ var createCounter = function(init) {
  console.log(increment);
  console.log(reset);
  console.log(decrement);
-
- 
- 
-
-    </script>
-</body>
-</html>
