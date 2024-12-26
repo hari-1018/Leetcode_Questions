@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Insert Position</title>
-</head>
-<body>
-    <script>
     // Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
     // Example 1:
@@ -32,9 +23,3 @@
     console.log(searchInsert([1,3,5,6],5));
     console.log(searchInsert([1,3,5,6],2));
     console.log(searchInsert([1,3,5,6],7));
-
-
-    
-    </script>
-</body>
-</html>
