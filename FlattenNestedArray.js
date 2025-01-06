@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flatten Nested Array</title>
-</head>
-<body>
-    <script>
-
 // Given a multi-dimensional array arr and a depth n, return a flattened version of that array.
 
 // A multi-dimensional array is a recursive data structure that contains integers or other multi-dimensional arrays.
@@ -36,7 +26,3 @@ var arr = [1,2,3,[4,5,6],[7,8,[9,10,11],12],[13,14,15]];
 var n=2;
 
 console.log(flat(arr, n));
-
-    </script>
-</body>
-</html>
