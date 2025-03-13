@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Wrapper</title>
-</head>
-<body>
-    <script>
+
 
 // Create a class ArrayWrapper that accepts an array of integers in its constructor. This class should have two features:
 
@@ -29,8 +21,3 @@ const nums1 = new ArrayWrapper([1, 5]);
 const nums2 = new ArrayWrapper([3, 4]);
 const result = nums1 + nums2;
 console.log(result);
-
-
-    </script>
-</body>
-</html>
